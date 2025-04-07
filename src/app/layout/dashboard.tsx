@@ -4,7 +4,6 @@ import {
     SidebarProvider,
     SidebarTrigger,
 } from "@/shared/ui/sidebar";
-import { AppSidebar } from "@/shared/components/app-sidebar";
 import {
     Breadcrumb,
     BreadcrumbList,
@@ -14,6 +13,7 @@ import {
     BreadcrumbSeparator,
 } from "@/shared/ui/breadcrumb";
 import { Separator } from "@radix-ui/react-separator";
+import { AppSidebar } from "@/widgets/sidebar";
 
 export function DashboardLayout() {
     return (
