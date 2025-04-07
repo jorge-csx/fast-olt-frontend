@@ -1,11 +1,18 @@
 import { createBrowserRouter, Navigate } from "react-router-dom";
 import { DashboardLayout } from "@/app/layout/dashboard";
-// import { RequireAuth } from "@/shared/lib";
 import { AuthLayout } from "@/app/layout/auth";
 import { useAuth } from "@/features/auth";
 import { Outlet } from "react-router-dom";
 
-// const { isAuthenticated } = useAuth();
+import {
+    DashboardPage,
+    AutofindPage,
+    OnuPage,
+    OltPage,
+    UsersPage,
+    SettingsPage,
+} from "@/pages/dashboard";
+
 const LoginPage = () => {
     return <div>LoginPage</div>;
 };
@@ -58,12 +65,12 @@ export const router = createBrowserRouter([
             </AuthGuard>
         ),
         children: [
-            { index: true, element: <div>DashboardHome</div> },
-            { path: "autofind", element: <div>AUTOFIND</div> },
-            { path: "olt", element: <div>OLT</div> },
-            { path: "onu", element: <div>ONU</div> },
-            { path: "users", element: <div>USERS</div> },
-            { path: "settings", element: <div>SETTINGS</div> },
+            { index: true, element: <DashboardPage /> },
+            { path: "autofind", element: <AutofindPage /> },
+            { path: "olt", element: <OltPage /> },
+            { path: "onu", element: <OnuPage /> },
+            { path: "users", element: <UsersPage /> },
+            { path: "settings", element: <SettingsPage /> },
         ],
     },
     {
