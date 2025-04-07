@@ -3,6 +3,7 @@ import { DashboardLayout } from "@/app/layout/dashboard";
 import { AuthLayout } from "@/app/layout/auth";
 import { useAuth } from "@/features/auth";
 import { Outlet } from "react-router-dom";
+import { ReactNode } from "react";
 
 import {
     DashboardPage,
@@ -20,7 +21,13 @@ const RegisterPage = () => {
     return <div>RegisterPage</div>;
 };
 
-const AuthGuard = ({ children, requireAuth, redirectTo }) => {
+interface AuthGuardProps {
+    children?: ReactNode;
+    requireAuth: boolean;
+    redirectTo: string;
+}
+
+const AuthGuard = ({ children, requireAuth, redirectTo }: AuthGuardProps) => {
     const { isAuthenticated } = useAuth();
 
     // Si requiere autenticación pero no está autenticado, o

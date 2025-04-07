@@ -1,5 +1,5 @@
 export { DashboardPage } from "./DashboardPage";
-export { AutofindPage } from "./AutoFindPage";
+export { AutofindPage } from "./AutofindPage";
 export { OnuPage } from "./OnuPage";
 export { OltPage } from "./OltPage";
 export { SettingsPage } from "./SettingsPage";
