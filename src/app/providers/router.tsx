@@ -4,6 +4,8 @@ import { AuthLayout } from "@/app/layout/auth";
 import { useAuth } from "@/features/auth";
 import { Outlet } from "react-router-dom";
 import { ReactNode } from "react";
+import { LoginPage } from "@/pages/login";
+import { RegisterPage } from "@/pages/register";
 
 import {
     DashboardPage,
@@ -13,13 +15,6 @@ import {
     UsersPage,
     SettingsPage,
 } from "@/pages/dashboard";
-
-const LoginPage = () => {
-    return <div>LoginPage</div>;
-};
-const RegisterPage = () => {
-    return <div>RegisterPage</div>;
-};
 
 interface AuthGuardProps {
     children?: ReactNode;
