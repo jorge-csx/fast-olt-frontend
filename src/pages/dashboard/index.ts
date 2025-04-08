@@ -1,6 +1,6 @@
-export { DashboardPage } from "./DashboardPage";
-export { AutofindPage } from "./AutofindPage";
-export { OnuPage } from "./OnuPage";
-export { OltPage } from "./OltPage";
-export { SettingsPage } from "./SettingsPage";
-export { UsersPage } from "./UsersPage";
+export { DashboardPage } from "./ui/DashboardPage";
+export { AutofindPage } from "./ui/AutofindPage";
+export { OnuPage } from "./ui/OnuPage";
+export { OltPage } from "./ui/OltPage";
+export { SettingsPage } from "./ui/SettingsPage";
+export { UsersPage } from "./ui/UsersPage";
